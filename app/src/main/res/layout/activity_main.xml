@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Tên của bạn"
+
+        />
+
+    <EditText
+        android:id="@+id/edtname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Nhập Tên Của Bạn Vào Đây"
+        android:inputType="textMultiLine"
+        android:backgroundTint="@color/colorRed"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ngày sinh" />
+
+    <EditText
+        android:id="@+id/edtdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="Nhập ngày sinh vào đây"
+        android:backgroundTint="@color/colorRed"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giới tính" />
+
+    <RadioGroup
+        android:id="@+id/grb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+        <RadioButton
+            android:id="@+id/grb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:buttonTint="@color/colorRed"
+            android:text="Nam" />
+
+        <RadioButton
+            android:id="@+id/grb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nữ"
+            android:buttonTint="@color/colorRed"
+
+            />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sở thích của bạn" />
+
+    <CheckBox
+        android:id="@+id/cb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xem phim"
+        android:buttonTint="@color/colorRed"
+        />
+
+    <CheckBox
+        android:id="@+id/cb2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nghe nhạc"
+        android:buttonTint="@color/colorRed"/>
+
+
+    <CheckBox
+        android:id="@+id/cb3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đi cafe với bạn bè"
+        android:buttonTint="@color/colorRed"/>
+
+    <CheckBox
+        android:id="@+id/cb4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ở nhà một mình"
+        android:buttonTint="@color/colorRed"/>
+
+    <CheckBox
+        android:id="@+id/cb5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vào bếp nấu ăn"
+        android:buttonTint="@color/colorRed"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sở thích khác" />
+
+    <EditText
+        android:id="@+id/edtstk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:hint="Nhập sở thích khác"
+        android:backgroundTint="@color/colorRed"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Xác nhận" />
+</LinearLayout>
